@@ -1,7 +1,7 @@
 package file_reporter;
 @ISA = qw( ERG::report_generator_base );
 
-#  version:  1.12
+#  version:  1.13
 #  date:     7/2/98
 
 #  this package is a demo file report generator class based on the report

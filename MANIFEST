@@ -4,6 +4,7 @@ erg_report_summary.pm    report summary class
 erg_page_manager.pm      page manager class
 test.pl                  test/demo file
 file_reporter.pm         file reporter class used by test.pl
-Makefile.pm		 Makefile generator
+Makefile.pl		 Makefile generator
 README			 README file
 MANIFEST		 MANIFEST
+Changes                  list of changes

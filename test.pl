@@ -1,6 +1,6 @@
 #! /usr/local/bin/perl
 
-#  version:  1.12
+#  version:  1.13
 #  date:     9/2/98
 
 #  this program is a demonstration of using the extensible report generator

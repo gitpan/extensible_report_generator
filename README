@@ -57,13 +57,15 @@ class.  Comments of the beginning of each of the 4 basic class files
 can help explain more about how to extend the classes.
 
 The simplest way to use this module is just to copy the four class files
-into the working directory.  (Currently, there is no makefile.)
+into the working directory.  (The standard Makefile.pl is also provided.)
 
 
 LIST OF FILES INCLUDED:
 
     README	             -  this file
     MANIFEST                 -  list of files
+    Changes                  -  list of changes
+    Makefile.pl              -  make file generator
 
     erg_line_formatter.pm    -  line formatter class
     erg_report_generator.pm  -  basic report generator class
@@ -74,8 +76,8 @@ LIST OF FILES INCLUDED:
     file_reporter.pm         -  file reporter class used by test.pl
 
 
-Version:  1.12
-Date:  7/2/98
+Version:  1.13
+Date:  7/25/98
 
 s. luebking
 phoenixl@aol.com

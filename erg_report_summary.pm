@@ -1,6 +1,6 @@
 package ERG::report_summary;
 
-#  version:  1.12
+#  version:  1.13
 #  date:     7/2/98
 
 #  this package is a basic report summary class.
@@ -29,7 +29,7 @@ package ERG::report_summary;
 #
 #  s. luebking  phoenixL@aol.com
 
-$VERSION = "1.12";
+$VERSION = "1.13";
 
 require 5.000;
 

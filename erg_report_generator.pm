@@ -1,6 +1,6 @@
 package ERG::report_generator_base;
 
-#  version:  1.12
+#  version:  1.13
 #  date:     7/2/98
 
 #  this package is a basic report generator class.
@@ -103,7 +103,7 @@ package ERG::report_generator_base;
 #
 #  s. luebking  phoenixL@aol.com
 
-$VERSION = "1.12";
+$VERSION = "1.13";
 
 require "erg_line_formatter.pm";
 require 5.000;
@@ -351,7 +351,7 @@ sub specToFormat
    }
    else
    {
-      @specInfo = split(/[|]/,$spec);
+      @specInfo = split(/[|]/,$spec,3);
 
       if($#specInfo >= 0)
       {
@@ -1033,7 +1033,12 @@ sub timeStr
    my $returnStr;
    my @timeInfo;
 
+
+#  Time values:  ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst)
+
    @timeInfo = localtime($time);
+
+
    $returnStr = (($timeInfo[2] <= 9) ? ("0" . $timeInfo[2]) : $timeInfo[2])
 		  . ":" . (($timeInfo[1] <= 9) ? ("0" . $timeInfo[1]) : $timeInfo[1])
 		  . ":" . (($timeInfo[0] <= 9) ? ("0" . $timeInfo[0]) : $timeInfo[0]) ;
@@ -1062,13 +1067,19 @@ sub dateStr
 
    my $returnStr;
    my @timeInfo;
+   my $month;
+
+
+#  Time values:  ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst)
 
    @timeInfo = localtime($time);
-   $returnStr = (($timeInfo[4] <= 9) ? ("0" . $timeInfo[4]) : $timeInfo[4])
+
+
+   $month = $timeInfo[4]  + 1;
+
+   $returnStr = (($month <= 9) ? ("0" . $month) : $month)
                   . "/" . (($timeInfo[3] <= 9) ? ("0" . $timeInfo[3]) : $timeInfo[3])
 		  . "/" . (($timeInfo[5] <= 9) ? ("0" . $timeInfo[5]) : $timeInfo[5]);
-   
-#  ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst)
 
    return $returnStr;
 }

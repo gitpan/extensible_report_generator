@@ -1,6 +1,6 @@
 package ERG::page_manager;
 
-#  version:  1.12
+#  version:  1.13
 #  date:     7/2/98
 
 #  this package is a page manager class.
@@ -53,7 +53,7 @@ package ERG::page_manager;
 #
 #  s. luebking   phoenixL@aol.com
 
-$VERSION = "1.12";
+$VERSION = "1.13";
 
 require "erg_line_formatter.pm";
 require 5.000;

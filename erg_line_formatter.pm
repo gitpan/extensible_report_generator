@@ -1,6 +1,6 @@
 package ERG::line_formatter;
 
-#  version:  1.12
+#  version:  1.13
 #  date:     7/2/98
 
 #  this package is a line formatter class.
@@ -39,7 +39,7 @@ package ERG::line_formatter;
 #  s. luebking  phoenixL@aol.com
 
 
-$VERSION = "1.12";
+$VERSION = "1.13";
 
 require 5.000;
 
